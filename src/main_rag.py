@@ -20,7 +20,7 @@ def get_rag_chain():
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embeddings)
 
     # Configure the retriever to fetch the top 3 most relevant chunks
-    retriever = db.as_retriever(search_kwargs={"k": 3})
+    retriever = db.as_retriever(search_kwargs={"k": 5})
 
     # 2. Initialize the local LLM
     print("Initializing Llama 3.1 (8B) model via Ollama...")
