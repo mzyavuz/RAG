@@ -1,10 +1,10 @@
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings
 import os
 import shutil
 
 # This is where Chroma will save its database files
-CHROMA_PATH = "../data/chroma" 
+CHROMA_PATH = os.path.join(os.path.dirname(__file__), "../data/chroma") 
 
 def save_to_chroma(chunks):
     """

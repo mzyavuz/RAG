@@ -1,0 +1,10 @@
+src/venv/
+data/chroma/
+src/__pycache__/
+**/__pycache__/
+*.pyc
+.DS_Store
+
+CLAUDE.md
+.claudeignore
+

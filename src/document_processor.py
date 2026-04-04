@@ -1,8 +1,11 @@
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from database import save_to_chroma
+import os
 
-def load_and_chunk_documents(directory_path="../docs", chunk_size=1000, chunk_overlap=200):
+DOCS_PATH = os.path.join(os.path.dirname(__file__), "../docs")
+
+def load_and_chunk_documents(directory_path=DOCS_PATH, chunk_size=1000, chunk_overlap=200):
     """
     Loads PDFs from a directory and splits them into configurable chunks.
     """
@@ -37,7 +40,7 @@ def load_and_chunk_documents(directory_path="../docs", chunk_size=1000, chunk_ov
 
 if __name__ == "__main__":
     # 1. Load and chunk the PDFs
-    my_chunks = load_and_chunk_documents(directory_path="../docs", chunk_size=800, chunk_overlap=150)
+    my_chunks = load_and_chunk_documents(chunk_size=800, chunk_overlap=150)
     
     # 2. Save them to the database
     if my_chunks:

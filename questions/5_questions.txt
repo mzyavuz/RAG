@@ -1,0 +1,15 @@
+Here are the 5 questions I have selected for your manual test, perfectly balanced to give your RAG system a solid workout:
+
+Your 5 Test Questions
+Easy
+
+What does the acronym "MCP" stand for in the context of AI engineering?
+
+In the MCP architecture, what is the role of an "MCP Server"?
+
+Medium
+3. Describe the client-server handshake process. What happens when an MCP connection is first initialized?
+4. If a user wants an AI to be able to read a static local configuration file, which MCP feature (Resource, Tool, or Prompt) should the server developer use, and why?
+
+Hard
+5. How does MCP's user-controlled, opt-in authorization model mitigate the security risks of granting a Large Language Model access to a local filesystem?
