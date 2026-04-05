@@ -1,4 +1,4 @@
-# RAG System Evaluation Report
+# RAG System Manuel Evaluation Report
 **Course:** SWE 580 – Applied Large Language Models  
 **Assignment:** RAG Pipeline Evaluation  
 **Student:** M. Zeynep  
