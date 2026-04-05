@@ -145,7 +145,7 @@ Three custom evaluators are defined in `src/langsmith_evaluators.py`:
 
 | Evaluator | What it measures |
 |-----------|-----------------|
-| **Correctness** | Keyword overlap between answer and reference (≥60% → 1.0, ≥30% → 0.5) |
+| **Correctness** | Keyword overlap between answer and reference |
 | **Relevance** | Whether the answer addresses the question (question-term coverage) |
 | **Hallucination_Free** | Whether all facts in the answer are grounded in retrieved context |
 
