@@ -170,14 +170,13 @@ Screenshots from the LangSmith dashboard are in the `screenshots/` directory:
 
 | File | Contents |
 |------|----------|
-| `Screenshot 2026-03-31 at 23.33.08.png` | Dataset view — 20 Q&A examples |
-| `Screenshot 2026-04-04 at 23.51.47.png` | Experiment traces overview |
-| `Screenshot 2026-04-04 at 23.51.54.png` | Per-question score breakdown |
-| `Screenshot 2026-04-04 at 23.52.02.png` | Evaluator output detail |
+| `Screenshot 2026-04-04 at 23.51.47.png` | Examples (Questions) Table |
+| `Screenshot 2026-04-04 at 23.51.54.png` | First Experiment to Test |
+| `Screenshot 2026-04-04 at 23.52.02.png` | Evaluator output detail of First Experiment |
 | `Screenshot 2026-04-05 at 22.25.54.png` | 10-experiment comparison table |
-| `Screenshot 2026-04-05 at 22.26.09.png` | Score distribution across configurations |
+| `Screenshot 2026-04-05 at 22.26.09.png` | Tracing |
 | `Screenshot 2026-04-05 at 22.26.27.png` | Custom evaluator results |
-| `Screenshot 2026-04-05 at 22.48.08.png` | Optimal experiment (Exp 10) trace |
+| `Screenshot 2026-04-05 at 22.48.08.png` | Evaluators |
 
 ---
 

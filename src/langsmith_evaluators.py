@@ -42,10 +42,8 @@ def correctness_evaluator():
 
         overlap = len(ref_words & ans_words) / len(ref_words)
 
-        if overlap >= 0.6:
+        if overlap >= 0.9:
             score = 1.0
-        elif overlap >= 0.3:
-            score = 0.5
         else:
             score = 0.0
 
@@ -86,10 +84,8 @@ def relevance_evaluator():
         match_count = sum(1 for w in question_words if w in answer)
         relevance = match_count / len(question_words)
 
-        if relevance >= 0.4:
+        if relevance >= 0.9:
             score = 1.0
-        elif relevance >= 0.2:
-            score = 0.5
         else:
             score = 0.0
 
@@ -128,10 +124,8 @@ def hallucination_evaluator():
         grounded_count = sum(1 for w in answer_words if w in context)
         grounding_ratio = grounded_count / len(answer_words)
 
-        if grounding_ratio >= 0.5:
+        if grounding_ratio >= 0.9:
             score = 1.0
-        elif grounding_ratio >= 0.25:
-            score = 0.5
         else:
             score = 0.0
 
