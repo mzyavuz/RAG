@@ -5,6 +5,11 @@
 
 A fully local Retrieval-Augmented Generation (RAG) pipeline built with LangChain, ChromaDB, and Ollama, evaluated over 10 experimental configurations via LangSmith.
 
+Clone using the web URL:
+```bash
+https://github.com/mzyavuz/RAG.git
+```
+
 ---
 
 ## Repository Structure
