@@ -1,4 +1,4 @@
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -22,6 +22,8 @@ def get_rag_chain():
     # Configure the retriever to fetch the top 3 most relevant chunks
     retriever = db.as_retriever(search_kwargs={"k": 5})
 
+    
+
     # 2. Initialize the local LLM
     print("Initializing Llama 3.1 (8B) model via Ollama...")
     llm = OllamaLLM(model="llama3.1:8b")
@@ -29,15 +31,15 @@ def get_rag_chain():
     # 3. Create a custom prompt template
     # This forces the LLM to only use the retrieved context and prevents hallucinations
     prompt_template = """You are a helpful AI assistant for a software engineering student.
-Use the following pieces of retrieved context to answer the question at the end.
-If you don't know the answer based on the context, just say that you don't know, don't try to make up an answer.
+    Use the following pieces of retrieved context to answer the question at the end.
+    If you don't know the answer based on the context, just say that you don't know, don't try to make up an answer.
 
-Context:
-{context}
+    Context:
+    {context}
 
-Question: {question}
+    Question: {question}
 
-Helpful Answer:"""
+    Helpful Answer:"""
 
     prompt = PromptTemplate(
         template=prompt_template, input_variables=["context", "question"]
